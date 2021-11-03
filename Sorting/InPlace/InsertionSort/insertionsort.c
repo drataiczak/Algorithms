@@ -33,6 +33,10 @@ int main() {
   int *array = NULL;
 
   array = malloc(sizeof(int) * ARR_SIZE);
+  if(NULL == array) {
+    return -1;
+  }
+
   srand(time(NULL));
 
   printf("The original array is: [ ");
