@@ -18,6 +18,7 @@ end
 
 function main()
   local array = {}
+  math.randomseed(os.time())
 
   io.write("The original array is: [ ")
   for i = 0, array_size - 1 do
