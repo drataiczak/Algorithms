@@ -49,5 +49,7 @@ int main() {
     i == ARR_SIZE - 1 ? printf("%d ]\n", array[i]) : printf("%d, ", array[i]);  
   }
 
+  free(array);
+
   return 0;
 }
